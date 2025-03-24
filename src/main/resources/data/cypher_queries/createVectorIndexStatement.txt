@@ -1,0 +1,3 @@
+CREATE VECTOR INDEX excerpt_embedding IF NOT EXISTS
+    FOR (e:Excerpt) ON (e.embedding)
+    OPTIONS {indexConfig: {`vector.dimensions`: 1536, `vector.similarity_function`:'cosine'}}
