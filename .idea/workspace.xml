@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5615b527-1996-4bfe-ae3f-b00e99ccfb10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fusion/JsonToNeo4jImporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/cypher_queries/IndexDefinitions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/cypher_queries/createGraphStatement.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/cypher_queries/createVectorIndexStatement.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fusion/Neo4jEmbeddingProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fusion/utils/TextEmbeddingGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/cypher_queries/getNodesWithEmptyEmbeddingsStatement.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fusion/JsonToNeo4jImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fusion/JsonToNeo4jImporter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,8 @@
   "keyToString": {
     "Gradle.ContractReview [:ConvertPDFToJSON.main()].executor": "Run",
     "Gradle.ContractReview [:Example.main()].executor": "Run",
-    "Gradle.ContractReview [:JsonToNeo4jImporter.main()].executor": "Debug",
+    "Gradle.ContractReview [:JsonToNeo4jImporter.main()].executor": "Run",
+    "Gradle.ContractReview [:Neo4jEmbeddingProcessor.main()].executor": "Run",
     "Gradle.ContractReview [:Sample.main()].executor": "Run",
     "Gradle.ContractReview [:VertexAIGeminiExample.main()].executor": "Run",
     "Gradle.ContractReview [clean].executor": "Run",
@@ -91,15 +91,19 @@
     "com.google.cloudcode.ide_session_index": "20250324_0001",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/satyaanumolu/POCs/ContractReview/src/main/resources"
+    "last_opened_file_path": "/Users/satyaanumolu/POCs/ContractReview/src/main/resources/data/output"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/data/output" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/prompts" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fusion" />
     </key>
   </component>
   <component name="RunManager">
@@ -152,13 +156,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/fusion/JsonToNeo4jImporter.java</url>
-          <line>55</line>
+          <line>54</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/fusion/JsonToNeo4jImporter.java</url>
-          <line>51</line>
+          <line>50</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/fusion/Neo4jEmbeddingProcessor.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -44,7 +44,6 @@ public class JsonToNeo4jImporter {
             }
 
             // Step 3 Load JSON Files
-
             String createGraphStatement = loadQueryFromFile("src/main/resources/data/cypher_queries/createGraphStatement.txt");
             List<String> jsonContracts = listJsonFiles(JSON_CONTRACT_FOLDER);
             int contractId = 1;
@@ -64,9 +63,9 @@ public class JsonToNeo4jImporter {
 
                 contractId++;
             }
-
-
+            // Step 4 Update Embeddings
             System.out.println("Generating Embeddings for Contract Excerpts...");
+            String getNodesWithEmptyEmbeddings = loadQueryFromFile("src/main/resources/data/cypher_queries/getNodesWithEmptyEmbeddingsStatement.txt");
 
 
 
