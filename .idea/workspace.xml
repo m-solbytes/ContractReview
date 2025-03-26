@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5615b527-1996-4bfe-ae3f-b00e99ccfb10" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fusion/ConvertPDFToJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fusion/ConvertPDFToJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fusion/Neo4jEmbeddingProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fusion/Neo4jEmbeddingProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
