@@ -1,18 +1,13 @@
 package com.fusion;
-
-
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.cloud.vertexai.VertexAI;
 import com.google.cloud.vertexai.api.Candidate;
 import com.google.cloud.vertexai.api.Content;
 import com.google.cloud.vertexai.api.GenerateContentResponse;
 import com.google.cloud.vertexai.api.Part;
-import com.google.cloud.vertexai.generativeai.ContentMaker;
 import com.google.cloud.vertexai.generativeai.GenerativeModel;
-import com.google.cloud.vertexai.generativeai.PartMaker;
+import com.google.protobuf.util.JsonFormat;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
-import com.google.protobuf.util.JsonFormat;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -42,23 +37,18 @@ public class ConvertPDFToJSON {
         // Initialize client that will be used to send requests. This client only needs
         // to be created once, and can be reused for multiple requests.
         try (VertexAI vertexAI = new VertexAI(projectId, location)) {
-
-
                 // Load prompts from resources
                 String userPrompt;
                 try (InputStream inputStream = ConvertPDFToJSON.class.getResourceAsStream("/prompts/contract_extraction_prompt.txt")) {
                     userPrompt = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
                 }
-
                 String systemPrompt;
                 try (InputStream inputStream = ConvertPDFToJSON.class.getResourceAsStream("/prompts/system_prompt.txt")) {
                     systemPrompt = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
                 }
-
                 // Extract PDF text
                 String pdfText = extractText(inputFilePath);
                 String fullPrompt = systemPrompt + "\n\n" + userPrompt + "\n\n" + pdfText;
-
             // Build content list
             List<Content> contents = List.of(
 //                    Content.newBuilder()
@@ -81,15 +71,12 @@ public class ConvertPDFToJSON {
                     String text = part.getText();
                     result = text.replaceAll("```json\\n|```", "").trim();
                     // Process the text as needed
-
                 }
             }
-
         }catch (Exception e){
             e.printStackTrace();
         }
         return result;
-
     }
 
     private static String extractText(String filePath) throws Exception {

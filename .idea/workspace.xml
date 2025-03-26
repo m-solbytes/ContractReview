@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5615b527-1996-4bfe-ae3f-b00e99ccfb10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fusion/Neo4jEmbeddingProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fusion/utils/TextEmbeddingGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/cypher_queries/getNodesWithEmptyEmbeddingsStatement.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fusion/JsonToNeo4jImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fusion/JsonToNeo4jImporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fusion/ConvertPDFToJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fusion/ConvertPDFToJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fusion/Neo4jEmbeddingProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fusion/Neo4jEmbeddingProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,8 @@
     "com.google.cloudcode.ide_session_index": "20250324_0001",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/satyaanumolu/POCs/ContractReview/src/main/resources/data/output"
+    "last_opened_file_path": "/Users/satyaanumolu/POCs/ContractReview/src/main/resources/data/output",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -151,7 +150,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/fusion/ConvertPDFToJSON.java</url>
-          <line>75</line>
+          <line>65</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -166,7 +165,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/fusion/Neo4jEmbeddingProcessor.java</url>
-          <line>47</line>
+          <line>24</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
